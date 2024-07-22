@@ -69,3 +69,17 @@ This is all you get in terms of an ORM.
 
 We don't strongly type things. We just use these HashMap everywhere for dealing
 with data.
+
+This repo is based off the golang version called just:
+
+[https://github.com/andrewarrow/feedback/](https://github.com/andrewarrow/feedback/)
+
+it has all these features above but in go vs rust.
+
+I'm slowly moving everything from go to rust and want to market this framework as rusty-feedback.
+
+The name feedback comes from the coding style. Everything is very messy and in flux think saw-dust-on-the-floor construction site. As in, look at this function, see what it's doing? What do you think? Any feedback?
+
+And because you are shown the code with that frame of mind, here's a start of what I'm thinking, do you see the vision? I know it's not perfect, by all means, give me feedback. 
+
+
