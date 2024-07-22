@@ -6,4 +6,29 @@ web related.
 
 It's an opinionated framework.
 
-We use full page refreshes by default. When frontend work is required we do that on a per page basis. It's nice to have normal users that render super fast HTML pages.
+We use full page refreshes by default. When frontend work is required we do that on a per page basis and it becomes an SPA.
+
+We use 
+
+```
+cargo install wasm-pack
+```
+
+to write all frontend logic still in rust. The frontend and the backend are rust.
+
+We use .mu templates which look like:
+
+```
+div p-0 
+  {{ template "navbar" . }}
+  div flex justify-between
+    ul menu bg-base-200 menu-horizontal rounded-box
+      li
+        a href=./{{$guid}}
+          Services
+  div flex justify-center mt-3 p-3
+    div text-4xl
+      {{ .name }}
+```
+
+It's just HTML but without having to close any tags (two spaces indent to show which tag is under another.) all the words after the tag are made classes. No need to type class="" and this all gets rendered to normal .html files with rust templates.
