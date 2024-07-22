@@ -45,3 +45,27 @@ tera is the way. We use the same template in the backend and frontend. wasm-pack
 [https://tailwindcss.com/](https://tailwindcss.com/) and [https://daisyui.com/](https://daisyui.com/) is how we make everything look polished and professional.
 
 [https://www.postgresql.org/](https://www.postgresql.org/) and [https://www.sqlite.org/](https://www.sqlite.org/) are the database we support.
+
+
+```
+    use std::collections::HashMap;
+
+    let rows = client.query("SELECT * FROM users", &[]).await?;
+
+    // Iterate over the rows and create dictionaries
+    let mut results = Vec::new();
+    for row in rows {
+        let mut row_dict = HashMap::new();
+        for (i, column) in row.columns().iter().enumerate() {
+            let column_name = column.name();
+            let value: Option<String> = row.try_get(i).unwrap_or(None);
+            row_dict.insert(column_name.to_string(), value);
+        }
+        results.push(row_dict);
+    }
+```
+
+This is all you get in terms of an ORM.
+
+We don't strongly type things. We just use these HashMap everywhere for dealing
+with data.
