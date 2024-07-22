@@ -40,3 +40,8 @@ serde = { version = "1.0", features = ["derive"] }
 ```
 
 tera is the way. We use the same template in the backend and frontend. wasm-pack will use tera and render what might be called server-side templates client side.
+
+
+[https://tailwindcss.com/](https://tailwindcss.com/) and [https://daisyui.com/](https://daisyui.com/) is how we make everything look polished and professional.
+
+
