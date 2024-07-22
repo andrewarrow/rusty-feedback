@@ -32,3 +32,11 @@ div p-0
 ```
 
 It's just HTML but without having to close any tags (two spaces indent to show which tag is under another.) all the words after the tag are made classes. No need to type class="" and this all gets rendered to normal .html files with rust templates.
+
+```
+[dependencies]
+tera = "1.13"
+serde = { version = "1.0", features = ["derive"] }
+```
+
+tera is the way. We use the same template in the backend and frontend. wasm-pack will use tera and render what might be called server-side templates client side.
