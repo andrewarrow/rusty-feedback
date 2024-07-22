@@ -44,4 +44,4 @@ tera is the way. We use the same template in the backend and frontend. wasm-pack
 
 [https://tailwindcss.com/](https://tailwindcss.com/) and [https://daisyui.com/](https://daisyui.com/) is how we make everything look polished and professional.
 
-
+[https://www.postgresql.org/](https://www.postgresql.org/) and [https://www.sqlite.org/](https://www.sqlite.org/) are the database we support.
