@@ -94,7 +94,18 @@ In the next example third is "test2".
 
 When just /foo is called you get both second == "" and third == "".
 
+You check the method for POST or GET etc inside this method and route where you want.
 
+Migrations. They are additive. We run 
+
+```
+alter table users add column foo
+
+```
+
+over and over every time the program starts and 99% of the time they are errors. But the errors are harmless. We never run drop table or drop column. You have to do those by hand but they are rare. 
+
+Because it's effortless to add a new column, you don't have to make a new file and have everyone run a migration. You just edit one json file (or yaml we might move this file to yaml to be more human editable) and everyone on the team is already running all migrations every single time they start the app.
 
 # origins
 
