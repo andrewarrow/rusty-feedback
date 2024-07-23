@@ -73,7 +73,7 @@ Active::Record. You can do a few basic things but can always drop down to
 FreeFormSelect and FreeFormUpdate when needed.
 
 We don't strongly type things. We just use these HashMap everywhere for dealing
-with data.
+with data. When needed we make a "model" and start giving ourselves methods needed on something like a User database record. But for many database table records when they first enter our codebase, they are just HashMaps and nothing more.
 
 This repo is based off the golang version called just:
 
