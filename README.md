@@ -87,6 +87,7 @@ and then you have three controllers for foo, bar and other.
 Inside these controllers a handle method is called with two strings, `second` and `third`.
 
 /foo/test1
+
 /foot/test1/test2
 
 Foo is first, then test1 is second and third is "" in the first example.
