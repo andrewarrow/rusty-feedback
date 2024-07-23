@@ -34,6 +34,9 @@ div p-0
 It's just HTML but without having to close any tags (two spaces indent to show which tag is under another.) all the words after the tag are made classes. No need to type class="".
 No need to use quotes but you can't have spaces.
 
+Using .mu files I can make tailwind and daisy designs fast. Its very easy to just add
+a new parent div and indent children over. In normal HTML I'm 50% slower.
+
 This all gets rendered to normal .html files with rust templates.
 
 ```
