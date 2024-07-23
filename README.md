@@ -76,6 +76,28 @@ We don't strongly type things. We just use these HashMap everywhere for dealing
 with data. When needed we make a "model" and start giving ourselves methods needed on something like a User database record. But for many database table records when they first enter our codebase, they are just HashMaps and nothing more. Only when I write the same logic a few times because there is no model do I stop interacting with HashMap directly and add an abstraction layer. NOT BEFORE. Before that happens its important to just
 interact with the HashMap. Pre mature abstraction layer. PMAL. Bad.
 
+There are root level routes:
+
+/foo
+/bar
+/other
+
+and then you have three controllers for foo, bar and other.
+
+Inside these controllers a handle method is called with two strings, `second` and `third`.
+
+/foo/test1
+/foot/test1/test2
+
+Foo is first, then test1 is second and third is "" in the first example.
+In the next example third is "test2".
+
+When just /foo is called you get both second == "" and third == "".
+
+
+
+# origins
+
 This repo is based off the golang version called just:
 
 [https://github.com/andrewarrow/feedback/](https://github.com/andrewarrow/feedback/)
