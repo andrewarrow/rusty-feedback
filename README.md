@@ -100,7 +100,6 @@ Migrations. They are additive. We run
 
 ```
 alter table users add column foo
-
 ```
 
 over and over every time the program starts and 99% of the time they are errors. But the errors are harmless. We never run drop table or drop column. You have to do those by hand but they are rare. 
