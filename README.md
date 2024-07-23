@@ -73,7 +73,8 @@ Active::Record. You can do a few basic things but can always drop down to
 FreeFormSelect and FreeFormUpdate when needed.
 
 We don't strongly type things. We just use these HashMap everywhere for dealing
-with data. When needed we make a "model" and start giving ourselves methods needed on something like a User database record. But for many database table records when they first enter our codebase, they are just HashMaps and nothing more.
+with data. When needed we make a "model" and start giving ourselves methods needed on something like a User database record. But for many database table records when they first enter our codebase, they are just HashMaps and nothing more. Only when I write the same logic a few times because there is no model do I stop interacting with HashMap directly and add an abstraction layer. NOT BEFORE. Before that happens its important to just
+interact with the HashMap. Pre mature abstraction layer. PMAL. Bad.
 
 This repo is based off the golang version called just:
 
