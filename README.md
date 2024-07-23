@@ -1,4 +1,4 @@
-# rusty_feedback
+# rusty-feedback
 
 This is the web framework you use when it's your choice. This is a
 web framework that makes it fun and easy to throw together anything
