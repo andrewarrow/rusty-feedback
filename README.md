@@ -87,5 +87,16 @@ I'm slowly moving everything from go to rust and want to market this framework a
 The name feedback comes from the coding style. Everything is very messy and in flux think saw-dust-on-the-floor construction site. As in, look at this function, see what it's doing? What do you think? Any feedback?
 
 And because you are shown the code with that frame of mind, here's a start of what I'm thinking, do you see the vision? I know it's not perfect, by all means, give me feedback. 
+# show and tell
+
+[https://andrewarrow.dev/](https://andrewarrow.dev/)
+
+[https://script.fly.dev/](https://script.fly.dev/)
+
+[https://g-n-r.fly.dev/](https://g-n-r.fly.dev/)
+
+[https://foneproblem.com/](https://foneproblem.com/)
+
+[https://homeducky.com/](https://homeducky.com/)
 
 
