@@ -68,7 +68,9 @@ tera is the way. We use the same template in the backend and frontend. wasm-pack
     }
 ```
 
-This is all you get in terms of an ORM.
+This is all you get in terms of an ORM. Ha. Well not really. But don't expect
+Active::Record. You can do a few basic things but can always drop down to 
+FreeFormSelect and FreeFormUpdate when needed.
 
 We don't strongly type things. We just use these HashMap everywhere for dealing
 with data.
