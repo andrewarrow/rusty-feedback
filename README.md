@@ -102,6 +102,8 @@ When just /foo is called you get both second == "" and third == "".
 
 You check the method for POST or GET etc inside this method and route where you want.
 
+If you need /foo/bar/something/a-forth break this into /new-top-level-route/better
+
 Migrations. They are additive. We run 
 
 ```
