@@ -31,7 +31,10 @@ div p-0
       {{ .name }}
 ```
 
-It's just HTML but without having to close any tags (two spaces indent to show which tag is under another.) all the words after the tag are made classes. No need to type class="" and this all gets rendered to normal .html files with rust templates.
+It's just HTML but without having to close any tags (two spaces indent to show which tag is under another.) all the words after the tag are made classes. No need to type class="".
+No need to use quotes but you can't have spaces.
+
+This all gets rendered to normal .html files with rust templates.
 
 ```
 [dependencies]
