@@ -82,7 +82,9 @@ interact with the HashMap. Pre mature abstraction layer. PMAL. Bad.
 There are root level routes:
 
 /foo
+
 /bar
+
 /other
 
 and then you have three controllers for foo, bar and other.
